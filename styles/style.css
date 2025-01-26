@@ -1,1 +1,250 @@
-/* место для вашего кода */
+body { 
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  display: grid;
+  font-size: 18px;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items:center;
+  padding: 92px 50px 96px;
+  height: 293px;
+  
+}
+.header__links-list {
+  width: 391.48px;
+  height: 22px;
+  display: flex;
+  gap: 30px;
+  list-style-type:circle;
+  margin-left: 1px;
+  margin-bottom:4px;
+  margin-right: 2px;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  margin-right: 35px;
+  justify-self: right;
+  font-style: normal;
+  line-height: 135%;
+  margin-bottom: 5px;
+}
+
+.header__address {
+  border-bottom: 1px solid;
+}
+.header__menu {
+  font-family: 'Raleway';
+  font-weight: 400;
+  color: #000;
+  display: flex;
+}
+
+/* не понимаю нужны или нет
+.header__link{
+  
+}
+.header__links-list-item  {
+  
+}
+*/
+.header__link_active {
+border-bottom: 1px solid;
+}
+.header__links-list-item_no-bullit {
+  list-style-type:none;
+}
+
+
+.cover {
+  height: 757px;
+  position: relative;
+  padding: 165px 50px 207px;
+  flex-shrink: 0;
+  background: url(/images/cover.jpg) lightgray -138.084px -78.122px / 124.727% 120.828% no-repeat;
+}
+.overlay {
+  position: absolute;
+  opacity: 60%;
+  z-index: -1;
+  color: #000;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  color: #FFF;
+  line-height: 115%;
+  text-transform: uppercase;
+  width: 1000px;
+  height: 385px;
+}
+.aligned-text {
+  text-align: left;
+}
+.aligned-text_center {
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: center
+}
+.aligned-text_right {
+  text-align:right;
+  padding-top: 20px;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  font-family: 'Raleway';
+  font-weight:400;
+  text-transform: uppercase;
+  height: 51px;
+  width: 1000px;
+  z-index: 1;
+  padding: 106px 0px 50px 0px ;
+  color: #FFF;
+
+}
+.cover__description-text {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+  line-height: 127%;
+  text-transform: uppercase;
+  word-spacing:18.5px;
+  margin-top: 54px;
+}
+.bet-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFF;
+  background: transparent;
+  color: #FFF;
+  width: 256px;
+  height: 51px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 53px;
+}
+
+.lots {
+
+  width: 1052px;
+  height: 723px;
+  margin: 180px 24px 120px;
+}
+.lots__heading {
+  font-size: 40px;
+  font-family: 'Raleway';
+  font-weight:700;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  padding: 0 40px;
+  color: #000;
+}
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  gap: 25px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.lots__card-list-item {
+  min-height: 596px;
+  width: 334px;
+}
+.card-link {
+  color: #fff;
+}
+.card {
+  height: 100%;
+  position: relative;
+  font-family: 'Raleway';
+  color: #fff;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight:700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 48px 40px;
+  text-underline-offset: 4px;
+  
+}
+.card__text {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+}
+
+.card_type_film {
+  background: url(/images/card-lot-01.jpg) no-repeat center/cover;
+}
+.card_type_book {
+  background: url(/images/card-lot-02.jpg) no-repeat center/cover;
+}
+.card_type_picture {
+  background: url(/images/card-lot-03.jpg) no-repeat center/cover;
+}
+.lots__look-more-link {
+  display: flex;
+  padding: 30px 820px 0 40px;
+  line-height: normal;
+  font-weight: 400;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  color: #000;
+  font-size: 20px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  height: 595px;
+  margin: 120px 24px;
+
+}
+.about__logo {
+
+}
+.about__logo-image {
+
+}
+.about__column {
+
+}
+.about__title {
+
+}
+.about__text {
+
+}
+.footer{
+  height:180px; 
+  background-color:  blue;}
