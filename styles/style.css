@@ -12,18 +12,17 @@ a {
   font-size: 18px;
   grid-template-columns: 1fr min-content 1fr;
   align-items:center;
-  padding: 92px 50px 96px;
   min-height: 293px;
-  
-}
-.header__links-list {
+  padding: 92px 50px 96px;
 
+}
+
+.header__links-list {
+  display: flex;
   width: 391.48px;
   height: 22px;
-  display: flex;
-  gap: 33px;
+  gap: 30px;
   list-style-type:circle;
-  margin-bottom: 7px;
 }
 
 .header__logo-image {
@@ -37,7 +36,6 @@ a {
   justify-self: right;
   font-style: normal;
   line-height: 135%;
-  margin-bottom: 6px;
 }
 
 .header__address {
@@ -45,20 +43,12 @@ a {
   text-underline-offset: 4px;
 }
 .header__menu {
+  height: 22px;
+  width: 391.48px;
   font-family: 'Raleway';
   font-weight: 400;
-  color: #000;
-  display: flex;
 }
 
-/* не понимаю нужны или нет
-.header__link{
-  
-}
-.header__links-list-item  {
-  
-}
-*/
 .header__link_active {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -95,21 +85,25 @@ a {
   width: 1000px;
   height: 385px;
   padding: 165px 50px 207px;
+  
 }
 
 .aligned-text {
-  padding-left: 0;
-  padding-top: 0;
   text-align: left;
 }
 .aligned-text_center {
-  margin-top: 20px;
-  margin-left: 30px;
-  text-align: center
+  margin-top: 21px;
+  margin-left: 130px;
+  text-align: center;
+}
+.no-letter-spacing{
+
 }
 .aligned-text_right {
-  text-align:right;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-left: 614px;
+  text-align:left;
+
 }
 
 .cover__description {
@@ -123,18 +117,16 @@ a {
   height: 51px;
   width: 1000px;
   z-index: 1;
-  padding: 106px 0px 50px 0px ;
   color: #FFF;
+  margin-left: 50px;
+  margin-top: 270px;
 }
 
 .cover__description-text {
-  display: flex;
-  justify-content: space-around;
   font-weight: 400;
   line-height: 127%;
   text-transform: uppercase;
   word-spacing:18.5px;
-  margin-top: 54px;
 }
 
 .bet-button {
@@ -148,14 +140,13 @@ a {
   height: 51px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 50px;
 }
 
 .lots {
-
   width: 1052px;
   min-height: 723px;
   margin: 180px 24px 120px;
+  
 }
 .lots__heading {
   font-size: 40px;
@@ -168,7 +159,6 @@ a {
 }
 .lots__card-list {
   display: flex;
-  flex-direction: row;
   list-style:none;
   gap: 25px;
   flex-wrap: wrap;
@@ -182,6 +172,7 @@ a {
   color: #fff;
 }
 .card {
+  display: flex;
   height: 100%;
   position: relative;
   font-family: 'Raleway';
@@ -196,11 +187,10 @@ a {
   text-underline-offset: 4px;
   padding: 48px 40px;
 }
+
 .card__text {
-  display: flex;
-  align-items: flex-end;
+  align-self: end;
   position: absolute;
-  bottom: 0;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -213,12 +203,15 @@ a {
 .card_type_film {
   background: url(/images/card-lot-01.jpg) no-repeat center/cover;
 }
+
 .card_type_book {
   background: url(/images/card-lot-02.jpg) no-repeat center/cover;
 }
+
 .card_type_picture {
   background: url(/images/card-lot-03.jpg) no-repeat center/cover;
 }
+
 .lots__look-more-link {
   display: flex;
   padding: 30px 820px 0 40px;
@@ -229,6 +222,7 @@ a {
   color: #000;
   font-size: 20px;
 }
+
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -237,25 +231,34 @@ a {
 
 }
 .about__logo {
+  padding-top: 35px;
+  margin-left: 47px;
   height: 240px;
   width: 240px;
   background-color: #000;
   border-radius: 100%;
-  
+  background-image: url(/images/logo-white.svg) ;
+  background-repeat: no-repeat;
+  background-size: 148px 114px;
+  background-position: center;
 }
 .about__logo-image {
-  background: url(/images/logo-white.svg);
-  background: url(/images/logo-black.svg) no-repeat;
+background-image: url(/images/logo-black.svg);
+
 }
 .about__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 693px;
   min-height: 449px;  
   background-color: red;
+  padding-left: 9px;
 
 }
 .about__title {
-
-font-weight: 700;
+height: 47px;
+font-weight: bold;
 font-size: 40px;
 text-transform: uppercase;
 }
@@ -263,6 +266,11 @@ text-transform: uppercase;
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
+}
+
+.about__text_first {
+  margin-top: 100px;
+  padding-bottom: 24px;
 }
 
 
