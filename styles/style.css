@@ -21,16 +21,18 @@ a {
   display: flex;
   width: 391.48px;
   height: 22px;
-  gap: 30px;
+  gap: 33px;
   list-style-type:circle;
 }
 
 .header__logo-image {
+
   width: 148px;
   height: 105px;
 }
 
 .address {
+  padding-top: 4px;
   width: 240px;
   min-height: 98px;
   justify-self: right;
