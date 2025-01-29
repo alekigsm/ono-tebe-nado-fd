@@ -26,7 +26,7 @@ a {
 }
 
 .header__logo-image {
-
+  display: block;
   width: 148px;
   height: 105px;
 }
@@ -98,9 +98,9 @@ a {
   margin-left: 130px;
   text-align: center;
 }
-.no-letter-spacing{
+/*.no-letter-spacing{
 
-}
+}*/
 .aligned-text_right {
   margin-top: 20px;
   padding-left: 614px;
@@ -227,14 +227,13 @@ a {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  margin: 120px 24px 0px;
+  grid-template-columns: 334px 1fr;
   min-height: 595px;
-  margin: 120px 24px;
-
+  gap:36px;
 }
+
 .about__logo {
-  padding-top: 35px;
-  margin-left: 47px;
   height: 240px;
   width: 240px;
   background-color: #000;
@@ -243,28 +242,32 @@ a {
   background-repeat: no-repeat;
   background-size: 148px 114px;
   background-position: center;
+  justify-self: center;
+  margin-top: 35px;
 }
+
 .about__logo-image {
 background-image: url(/images/logo-black.svg);
-
 }
+
 .about__column {
   display: flex;
   flex-direction: column;
   justify-content: end;
   width: 693px;
   min-height: 449px;  
-  background-color: red;
-  padding-left: 9px;
-
+  margin-left: -10px;
 }
+
 .about__title {
 height: 47px;
 font-weight: bold;
 font-size: 40px;
 text-transform: uppercase;
 }
+
 .about__text {
+margin-right: 10px; 
 font-weight: 400;
 font-size: 20px;
 line-height: 120%;
@@ -278,12 +281,50 @@ line-height: 120%;
 
 
 
-
-
-
-
-
-
 .footer{
-  height:180px; 
-  background-color:  blue;}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 180px;
+  height:180px;
+  padding-left: 50px;
+  padding-right: 50px; 
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.footer__menu{
+  justify-items: center;
+}
+.footer_address{
+  justify-self: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  height: 98px;
+}
+.footer__menu-list{
+  list-style-type: none;
+  text-align: center;
+  
+}
+.footer__menu-link_active {
+  text-decoration: none;
+
+}
+
+.footer__menu-link{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__social-list{
+  display: flex;
+  justify-content: right;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__social-icon{
+  height: 48px;
+  width: 48px;
+}
