@@ -65,13 +65,16 @@ a {
   background-color: #000;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  inset: 0;
 }
 
 .cover {
   min-height: 757px;
   position: relative;
   background: url(/images/cover.jpg) lightgray -138.084px -78.122px / 124.727% 120.828% no-repeat;
+  color: #FFF;
+  background-size: cover;
+  background-position: center;
 }
 
 .cover__title {
@@ -81,22 +84,22 @@ a {
   font-weight: 700;
   font-size: 100px;
   letter-spacing: 0.3em;
-  color: #FFF;
   line-height: 115%;
   text-transform: uppercase;
   width: 1000px;
   height: 385px;
   padding: 165px 50px 207px;
-  
 }
 
 .aligned-text {
   text-align: left;
+  z-index: 1;
 }
 .aligned-text_center {
   margin-top: 21px;
   margin-left: 130px;
   text-align: center;
+  z-index: 1;
 }
 /*.no-letter-spacing{
 
@@ -105,7 +108,7 @@ a {
   margin-top: 20px;
   padding-left: 614px;
   text-align:left;
-
+  z-index: 1;
 }
 
 .cover__description {
@@ -118,7 +121,6 @@ a {
   text-transform: uppercase;
   height: 51px;
   width: 1000px;
-  z-index: 1;
   color: #FFF;
   margin-left: 50px;
   margin-top: 270px;
@@ -129,6 +131,7 @@ a {
   line-height: 127%;
   text-transform: uppercase;
   word-spacing:18.5px;
+  z-index: 1;
 }
 
 .bet-button {
@@ -142,6 +145,7 @@ a {
   height: 51px;
   font-weight: 500;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .lots {
@@ -158,17 +162,19 @@ a {
   margin-bottom: 27px;
   padding: 0 40px;
   color: #000;
+  
 }
 .lots__card-list {
   display: flex;
   list-style:none;
   gap: 25px;
   flex-wrap: wrap;
-  z-index: 1;
+  
 }
 .lots__card-list-item {
   min-height: 596px;
   width: 334px;
+  
 }
 .card-link {
   color: #fff;
@@ -179,6 +185,7 @@ a {
   position: relative;
   font-family: 'Raleway';
   color: #fff;
+  
 }
 
 .card__title {
@@ -188,6 +195,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
   padding: 48px 40px;
+  z-index: 1;
 }
 
 .card__text {
