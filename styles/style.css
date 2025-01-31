@@ -31,14 +31,15 @@ a {
 .address {
   text-decoration: underline;
   text-underline-offset: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 135%;
 }
 
 .header__address {
-  padding-top: 4px;
   width: 240px;
-  min-height: 98px;
-  font-style: normal;
-  line-height: 135%;
+  padding-top: 4px;
   justify-self: end;
 }
 
@@ -106,11 +107,11 @@ a {
 }
 
 .aligned-text_right {
-  padding-top: 21px;
-  padding-right: 20px;
+  padding-right: 21px;
+  padding-top: 20px;
   text-align: right;
   z-index: 1;
-} 
+}
 
 .cover__description {
   display: flex;
@@ -179,7 +180,7 @@ a {
 }
 
 .card__title {
-   display: flex;
+  display: flex;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -283,6 +284,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 18px;
+  margin-bottom: 82px;
 }
 
 .footer__menu {
@@ -290,15 +292,10 @@ a {
 }
 
 .footer_address {
-  padding-top:6px;
   justify-self: left;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 125%;
 }
 
 .footer__menu-list {
-  padding-top: 6px;
   list-style-type: none;
   text-align: center;
 }
@@ -323,4 +320,3 @@ a {
   height: 48px;
   width: 48px;
 }
-
